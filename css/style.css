@@ -1,0 +1,152 @@
+*{  /* Убираем отступы */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    border-bottom: 2px solid #cccccc;
+}
+.head{
+    align-items: center;
+}
+.head h1{
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+.logo h1{
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: black;
+}
+.logo h1 span{
+    font-weight: normal;
+    display: block;
+}
+ul {
+    list-style-type: none; /* Убираем маркеры */
+}
+.menu ul li{
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.menu ul li a {
+    padding: 15px 20px;
+    white-space: nowrap;
+}
+
+.menu a:hover{
+    background: darkgrey; /* Цвет фона */
+}
+.content .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.data p{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 27px;
+    display: inline-block;
+    font-weight: normal;
+}
+.data span {
+    font-weight: bold;
+}
+.photo{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    outline: lightgray solid 2px;
+}
+.about-data p{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+.photoes{
+    float: left;
+    width: 250px;
+    height: 170px;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.photoes-hr{
+    float: right;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.data-first{
+   /* float: left;
+    width: 43%;*/
+    text-align: justify;
+    padding: 15px 40px 15px 30px;
+    margin-right: 100px;
+    box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+}
+.data-second{
+    padding: 15px 40px 15px 30px;
+    text-align: justify;
+    box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+
+}
+.photo img {
+   width: 100%;
+   height: auto;
+}
+.about-data{
+   padding-bottom: 20px;
+}
+.photoes img {
+   width: 250px;
+   height: 250px;
+}
+.about-me p {
+   text-align: justify;
+}
+.infom .data span {
+   font-weight: normal;
+   vertical-align: middle;
+}
+.infom{
+   width: 29%;
+   height: 100%;
+   vertical-align: top;
+   display: inline-block;
+   font-family: Arial, sans-serif;
+   padding: 20px 20px 20px 20px;
+   text-align: center;
+}
+.footer{
+   text-align: center;
+   background: #e1e1e1;
+   clear: both;
+}
+.footer p{
+   font-family: Arial, sans-serif;
+   font-size: 30px;
+}
+.active-page {
+   background: grey;
+}
