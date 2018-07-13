@@ -1,0 +1,167 @@
+*{  /* Убираем отступы */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    border-bottom: 2px solid #cccccc;
+}
+.head{
+    align-items: center;
+}
+.head h1{
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+.logo h1{
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: black;
+}
+.logo h1 span{
+    font-weight: normal;
+    display: block;
+}
+ul {
+    list-style-type: none; /* Убираем маркеры */
+}
+.menu ul li{
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.menu ul li a {
+    padding: 15px 20px;
+    white-space: nowrap;
+}
+
+.menu a:hover{
+    background: darkgrey; /* Цвет фона */
+}
+.content .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.data p{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 27px;
+    display: inline-block;
+    font-weight: normal;
+}
+.data span {
+    font-weight: bold;
+}
+.content{
+    max-width: 1000px;
+    padding: 50px;
+    margin: 0 auto;
+}
+.main-box{
+    width: 800px;
+    height: 800px;
+    background: grey;
+    position: relative;
+
+}
+.red-box{
+    width: 400px;
+    height: 400px;
+    background: red;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+.red-box:hover {
+    z-index: 1;
+    box-shadow:10px 10px 10px black;
+}
+.green-box{
+    width: 400px;
+    height: 400px;
+    background: green;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+.green-box:hover {
+    z-index: 1;
+    box-shadow:10px 10px 10px black;
+}
+.blue-box{
+    width: 400px;
+    height: 400px;
+    background: blue;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+}
+.blue-box:hover {
+    z-index: 1;
+    box-shadow:10px 10px 10px black;
+}
+.yellow-box{
+    width: 400px;
+    height: 400px;
+    background: yellow;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+.yellow-box:hover {
+    z-index: 1;
+    box-shadow:10px 10px 10px black;
+}
+.round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #989898;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.main-box span{
+    display: block;
+    width: 70px;
+    height: 5px;
+    background: black;
+    position: absolute;
+    transition: all 5s;
+    transform: rotate(45deg);
+
+}
+.round span:last-child {
+    transform: rotate(-45deg);
+}
+.footer{
+    text-align: center;
+    background: #e1e1e1;
+    clear: both;
+}
+.footer p{
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+}
+.active-page {
+    background: grey;
+}
