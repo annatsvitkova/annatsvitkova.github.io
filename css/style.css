@@ -1,0 +1,693 @@
+*{  /* Убираем отступы */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+.header-content {
+    background: #0054a4;
+    height: 30px;
+}
+.wrapper{
+    position: relative;
+    max-width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 33px;
+}
+.social p{
+    font-size: 9pt;
+    font-family: 'OpenSans', sans-serif;
+}
+
+.social ul li{
+    display: inline-block;
+    font-size: 22px;
+}
+ul {
+    list-style-type: none; /* Убираем маркеры */
+}
+/*.menu-bar{*/
+    /*display: flex;*/
+    /*height: 93px;*/
+    /*align-items: center;*/
+    /*justify-content: flex-end;*/
+/*}*/
+.menu{
+    display: flex;
+    margin-right: 16px;
+    height: 93px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menu-bar ul{
+    display: flex;
+}
+.menu-bar ul li a:hover {
+    border: 1px #0054a4 solid;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    transition: background-color 0.5s;
+}
+.menu-bar{
+    align-items: center;
+}
+.menu a:hover {
+    padding: 0 9px;
+    color: #0054a4;
+}
+.burger-menu{
+    margin-right: 16px;
+    cursor: pointer;
+    display: none;
+    position: relative;
+}
+.menu .burger-menu:hover .menu-item ul{
+    display: block;
+}
+
+.menu .burger-menu .menu-item li{
+    margin-bottom: 5px;
+}
+.menu-item ul li{
+    display: block;
+}
+.menu-item ul{
+    right: 4px;
+    z-index: 300;
+    background-color: rgba(255, 255, 255, 0.82);
+    user-select: none;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
+    display: none;
+    position: absolute;
+    text-align: right;
+    top: 30px;
+    left: -90px;
+}
+.burger-menu i{
+
+    font-size: 32px;
+    color: #a8a8a8;
+}
+
+.menu-item ul li a {
+    display: block;
+    height: 38px;
+    padding: 5px 20px;
+    font-family: "Open Sans";
+    letter-spacing: -0.1px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.48);
+    line-height: 38px;
+}
+.donate{
+    width: 162px;
+    height: 46px;
+    background: #f15b4f;
+    color: white;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.donate p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 46px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-family: 'GalanoGrotesque', sans-serif;
+
+}
+.donate i{
+    font-size: 20px;
+    line-height: 46px;
+}
+.menu ul li{
+    display: inline-block;
+
+}
+.menu ul li a {
+    display: block;
+    height: 38px;
+    padding: 1px 10px;
+    font-family: 'OpenSans',serif;
+    letter-spacing: -0.1px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.48);
+    line-height: 38px;
+}
+.donate:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.43);
+    transition: all .2s;
+}
+.social a{
+    color: white;
+    margin-right: 18px;
+}
+.donate .fas {
+    font-size: 22px;
+    position: relative;
+}
+.slider {
+    height: 42vm;
+    background: url(../image/background.jpg) no-repeat center;
+    background-size: cover;
+}
+.content{
+    display: flex;
+    align-items: center;
+    height: 85%;
+}
+.left-block {
+    width: 418px;
+}
+.left-block h1 {
+    font-size: 60px;
+    font-family: 'Lobster', sans-serif;
+    color: #0054a4;
+    font-weight: 400;
+}
+.left-block p {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    margin: 28px 0;
+}
+.buttons {
+    display: flex;
+}
+.button {
+    font-family: 'GalanoGrotesque', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    width: 162px;
+    height: 46px;
+    border-radius: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 46px;
+}
+.first{
+    background: #f15b4f;
+    margin-right: 15px;
+}
+.second{
+    background: #0054a4;
+}
+.button:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.43);
+    transition: all .2s;
+}
+.data p{
+    margin-bottom: 10px;
+}
+.line span{
+    width: 50%;
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #cccccc;
+}
+
+.all-blocks {
+    font-size: 55px;
+}
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -80px;
+    /*flex-wrap: wrap;*/
+}
+.block {
+    border-radius: 30px;
+    padding: 30px 25px 30px 20px;
+    box-sizing: border-box;
+    width: 376px;
+    height: 164px;
+    display: flex;
+    justify-content: space-between;
+}
+.green {
+    background: #6fbd2a;
+    color: #6fbd2a;
+}
+.red{
+    background: #f15b4f;
+    color: #f15b4f;
+}
+.blue{
+    background: #0054a4;
+    color: #0054a4;
+}
+.blocks .content {
+    display: flex;
+}
+.icon {
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-self: center;
+}
+.icon i {
+    font-size: 40px;
+}
+.data p{
+    font-size: 26px;
+    font-family: "Lobster", sans-serif;
+    color: white;
+    text-transform: capitalize;
+}
+.text p{
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
+    color: white;
+}
+.arrow {
+    margin-left: 15px;
+    display: flex;
+}
+.arrow i {
+    color: white;
+    font-size: 32px;
+}
+.block:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.43);
+    transition: all .2s;
+}
+.about {
+    padding-bottom: 70px;
+}
+.text-header h1 {
+    font-size: 40px;
+    font-family: "Lobster", sans-serif;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+}
+.about p {
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    color: black;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 25px;
+}
+.information {
+    display: flex;
+    justify-content: space-between;
+}
+.picture {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.picture p {
+    color: #a8a8a8;
+    font-size: 22px;
+    font-family: "Lobster", sans-serif;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    margin-top: 35px;
+}
+.picture h2 {
+    color: #0054a4;
+    font-size: 40px;
+    font-family: "Lobster", sans-serif;
+    text-transform: capitalize;
+}
+
+
+
+@media only screen and (max-width: 1600px) {
+    .slider {
+        max-width: 1600px;
+        height: 43vw;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media only screen and (max-width: 1120px) {
+    .menu > ul{
+        display: none;
+    }
+    .menu .burger-menu{
+        display: block;
+        justify-content: center;
+    }
+    .menu-bar{
+        display: none;
+    }
+    .menu .menu-item{
+        display: block;
+
+    }
+    .info h1 {
+        font-size: 50px;
+        line-height: 1.2;
+    }
+    .menu {
+        height: 80px;
+    }
+    .logo img {
+        height: 167px;
+    }
+    .slider {
+        max-width: 100%;
+        height: 43vw;
+    }
+    .left-block {
+        padding-bottom: 67px;
+    }
+    .blocks {
+        display: flex;
+    }
+
+    .text p {
+        text-align: center;
+    }
+}
+@media screen and ( max-width: 1024px ) {
+    .info h1 {
+        font-size: 42px;
+    }
+    .blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0;
+    }
+    .left-block {
+        width: 380px;
+    }
+
+    .buttons .button {
+        font-weight: 400;
+    }
+
+    .info p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+@media screen and ( max-width: 860px ) {
+    .text-header h1 {
+        font-size: 36px;
+    }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .left-block {
+        padding-bottom: 0;
+        width: 45%;
+
+    }
+    .blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0;
+    }
+    h3 {
+        font-size: 22px;
+    }
+
+    .text p {
+        text-align: left;
+        padding: 3px 5px;
+    }
+
+    .picture h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .picture p {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .picture img {
+        width: auto;
+        height: 18vw;
+    }
+}
+@media screen and ( max-width: 768px ) {
+    .slider {
+        height: 59vw;
+    }
+
+    .text-header h1 {
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .info p {
+        width: 100%;
+        margin: 5px 0 10px 0;
+    }
+
+    .buttons {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .blocks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0;
+    }
+
+    .block {
+        margin: 0 0 0 15px;
+        padding: 20px 25px 20px 20px;
+    }
+
+    .block:last-child {
+        margin-bottom: 0;
+    }
+
+    .information {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .picture {
+        margin-bottom: 35px;
+    }
+
+    .picture:last-child {
+        margin-bottom: 0;
+    }
+
+    .picture h2 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .picture p {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    .picture img {
+        width: auto;
+        height: auto;
+        margin-bottom: 5px;
+    }
+}
+@media screen and ( max-width: 700px ) {
+    .text-header h1 {
+        font-size: 36px;
+    }
+
+    .about {
+        padding: 0 20px;
+    }
+}
+@media screen and ( max-width: 640px ) {
+    .text-header h1 {
+        font-size: 28px;
+    }
+
+    .logo img {
+        height: 137px;
+    }
+
+    .menu {
+        height: 55px;
+    }
+
+    .button {
+        height: 35px;
+        line-height: 33px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .text-header p {
+        padding: 0 10px;
+    }
+}
+@media screen and ( max-width: 600px ) {
+    .info h1 {
+        font-size: 28px;
+    }
+
+    .info p {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+@media screen and ( max-width: 500px ) {
+    .logo img {
+        height: 110px;
+    }
+    .menu {
+        height: 42px;
+    }
+    .button {
+        width: 130px;
+        height: 28px;
+        font-size: 9px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .button.first::after {
+        margin-left: 6px;
+    }
+    .header-content li {
+        margin-right: 15px;
+    }
+    .header-content li:last-child {
+        margin-right: 0;
+    }
+}
+@media screen and ( max-width: 420px ) {
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .info p {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .burger-menu i {
+        padding-top: 0;
+    }
+
+    .blocks .block {
+        width: 320px;
+    }
+
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    .scroll {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+@media screen and ( max-width: 360px ) {
+
+    .info h1 {
+        font-size: 22px;
+    }
+
+    .burger-menu {
+        font-size: 20px;
+    }
+
+    .left-block {
+        position: relative;
+        width: 50%;
+    }
+
+    .button {
+        font-size: 8px;
+        width: 110px;
+        line-height: 25px;
+    }
+
+    .button.firts::after {
+        font-size: 18px;
+        top: 2px;
+    }
+    .blocks{
+        padding-top: 20px;
+    }
+
+    .blocks .block {
+        width: 300px;
+        padding: 20px 20px;
+    }
+
+    .blocks .block p {
+        font-size: 20px;
+    }
+
+    .burger-menu {
+        padding: 5px 5px;
+        margin-right: 5px;
+    }
+}
+@media screen and ( max-width: 320px ) {
+    .wrapper {
+        box-sizing: border-box;
+        width: 320px;
+    }
+    .blocks{
+        padding-top: 90px;
+    }
+    .header {
+        box-sizing: border-box;
+        width: 320px;
+    }
+}
