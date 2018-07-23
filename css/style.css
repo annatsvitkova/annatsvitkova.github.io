@@ -79,6 +79,8 @@ a {
     cursor: pointer;
     display: none;
     position: relative; }
+    .menuItem__burgerMenu:hover .menu-item {
+      display: block; }
     .menuItem__burgerMenu .menu-icon i {
       font-size: 32px;
       color: #a8a8a8; }
@@ -302,16 +304,12 @@ a {
     width: 230px; }
   .menuItem {
     height: 80px; }
-    .menuItem ul {
-      display: none; }
     .menuItem__menuBar {
       display: none; }
     .menuItem__burgerMenu {
       display: block;
       justify-content: center; }
       .menuItem__burgerMenu .menu-icon {
-        display: block; }
-      .menuItem__burgerMenu .menu-item {
         display: block; }
   .slider {
     max-width: 100%;
@@ -416,7 +414,7 @@ a {
         font-size: 40px;
         line-height: 1.2; }
   .blockItem {
-    margin: 0 0 0 15px;
+    margin-bottom: 15px;
     padding: 20px 25px 20px 20px; }
     .blockItem:last-child {
       margin-bottom: 0; }
@@ -582,4 +580,5 @@ a {
     height: 60px;
     width: 100px; }
   .blockItem__data .text p {
-    font-size: 6px; } }
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif; } }

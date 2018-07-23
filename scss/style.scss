@@ -80,6 +80,9 @@
     cursor: pointer;
     display: none;
     position: relative;
+    &:hover .menu-item{
+      display: block;
+    }
     .menu-icon{
       i{
         font-size: 32px;
