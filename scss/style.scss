@@ -116,6 +116,10 @@
             font-size: 15px;
             color: rgba(0, 0, 0, 0.48);
             line-height: 38px;
+            &:hover{
+              color: #0054a4;
+              background: white;
+            }
           }//a
         }//li
       }//ul
