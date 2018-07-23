@@ -745,8 +745,8 @@
     //social
     &__logo {
       img {
-        height: 60px;
-        width: 100px;
+        height: 75px;
+        width: 135px;
       }
       //img
     }
@@ -769,4 +769,25 @@
     }
     //arrow
   } //blockItem
+  .leftblockItem {
+    position: relative;
+    width: 50%;
+    &__info {
+      h1 {
+        font-size: 18px;
+      }
+      //h1
+      p {
+
+      }//p
+    }
+    //info
+    &__buttons {
+      .button{
+
+
+      }
+    }
+    //buttons
+  } //leftblockItem
 }

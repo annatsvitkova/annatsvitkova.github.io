@@ -84,31 +84,32 @@ a {
     .menuItem__burgerMenu .menu-icon i {
       font-size: 32px;
       color: #a8a8a8; }
-    .menuItem__burgerMenu .menu-item ul {
-      right: 4px;
-      z-index: 300;
-      background-color: rgba(255, 255, 255, 0.82);
-      user-select: none;
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
-      display: none;
-      position: absolute;
-      text-align: right;
-      top: 30px;
-      left: -90px; }
-      .menuItem__burgerMenu .menu-item ul:hover {
-        display: block; }
-      .menuItem__burgerMenu .menu-item ul li {
-        display: block;
-        margin-bottom: 5px; }
-        .menuItem__burgerMenu .menu-item ul li a {
+    .menuItem__burgerMenu .menu-item {
+      display: none; }
+      .menuItem__burgerMenu .menu-item ul {
+        right: 4px;
+        z-index: 300;
+        background-color: rgba(255, 255, 255, 0.82);
+        user-select: none;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.33);
+        position: absolute;
+        text-align: right;
+        top: 30px;
+        left: -90px; }
+        .menuItem__burgerMenu .menu-item ul:hover {
+          display: block; }
+        .menuItem__burgerMenu .menu-item ul li {
           display: block;
-          height: 38px;
-          padding: 5px 20px;
-          font-family: 'OpenSans', serif;
-          letter-spacing: -0.1px;
-          font-size: 15px;
-          color: rgba(0, 0, 0, 0.48);
-          line-height: 38px; }
+          margin-bottom: 5px; }
+          .menuItem__burgerMenu .menu-item ul li a {
+            display: block;
+            height: 38px;
+            padding: 5px 20px;
+            font-family: 'OpenSans', serif;
+            letter-spacing: -0.1px;
+            font-size: 15px;
+            color: rgba(0, 0, 0, 0.48);
+            line-height: 38px; }
   .menuItem__donate {
     width: 162px;
     height: 46px;
@@ -577,8 +578,13 @@ a {
   .blocks {
     padding-top: 90px; }
   .headItem__logo img {
-    height: 60px;
-    width: 100px; }
+    height: 75px;
+    width: 135px; }
   .blockItem__data .text p {
     font-size: 14px;
-    font-family: "OpenSans", sans-serif; } }
+    font-family: "OpenSans", sans-serif; }
+  .leftblockItem {
+    position: relative;
+    width: 50%; }
+    .leftblockItem__info h1 {
+      font-size: 18px; } }
