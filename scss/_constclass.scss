@@ -18,3 +18,45 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
+.header-section {
+  margin-bottom: 70px;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  .text-header {
+    margin-top: -1px;
+    margin-bottom: 0;
+    color: #0054a4;
+    h2 {
+      font: 40px "Lobster";
+      color: black;
+    }
+  }//text-header
+  .text-description {
+    margin: 15px 0 40px 0;
+    color: gray;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "OpenSans", sans-serif;
+  }//text-description
+}//header-section
+.see-all {
+  text-transform: uppercase;
+  align-self: flex-end;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  &:hover p {
+    cursor: pointer;
+    color: #0054a4;
+  }
+  p{
+    font-weight: 400;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #0054a4;
+    color: black;
+    font-size: 15px;
+    font-family: 'GalanoGrotesque', sans-serif;
+  }
+}//see-all
